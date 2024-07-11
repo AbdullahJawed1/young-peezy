@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <style>
+      .how-to-body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f0f2f5;
+      }
+      .how-to-container {
+    width: 80%;
+    max-width: 600px;
+    background: url('assets/png/bg1.png') no-repeat center center fixed; 
+    background-size: cover; 
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    color: #fff;
+       }
+
+      .how-to-step {
+          padding: 20px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .how-to-step:last-child {
+          border-bottom: none;
+      }
+      .how-to-step-title {
+          margin: 0;
+          cursor: pointer;
+          background: rgba(0, 123, 255, 0.8);
+          color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+      }
+      .how-to-step-content {
+          display: none;
+          padding: 10px;
+          background-color: rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          border-radius: 5px;
+          margin-top: 10px;
+      }
+      .how-to-step.active .how-to-step-content {
+          display: block;
+      }
+
+      
+
+
+      .banner__top {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  max-width: 600px; /* Adjust width as needed */
+  color: aliceblue;
+  padding: 20px;
+}
+
+/* Example style for the join button */
+.join-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.join-button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+  </style>
+
+ 
+
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#45aeea"
+    />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#45aeea" />
+    <meta
+      name="msapplication-config"
+      content="assets/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#45aeea" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Young Peezy    </title>
+    <meta
+      name="description"
+      content="Yo, its Young Peezy, You know me as Pepe. But online in my world I'm
+      Young Peezy."
+    />
+    <link rel="stylesheet" href="css/main5e1f.css?v=2" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+      </header>
+      <section class="banner" id="banner">
+        <div data-id="about" class="egg">
+          <div>
+            <img src="assets/png/eggtop.png" />
+            <img src="assets/png/eggbottom.png" />
+            <p>about us</p>
+          </div>
+        </div>
+        <div data-id="questions" class="egg">
+          <div>
+            <img src="assets/png/eggtop.png" />
+            <img src="assets/png/eggbottom.png" />
+            <p>faq</p>
+          </div>
+        </div>
+        <div data-id="tokenomics" class="egg">
+          <div>
+            <img src="assets/png/eggtop.png" />
+            <img src="assets/png/eggbottom.png" />
+            <p>tokenomics</p>
+          </div>
+        </div>
+        <div data-id="buy" class="egg">
+          <div>
+            <img src="assets/png/eggtop.png" />
+            <img src="assets/png/eggbottom.png" />
+            <p>how to buy</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="container">
+          <div class="banner__top">
+            <img src="assets/png/bg3.png" style="width: 100%; max-width: 100%; height: auto;" alt="Background Image">
+            <div class="banner__overlay"></div>
+            <div class="banner__text">
+              <p style="color: aliceblue; font-size: 2em; font-weight: bold;">HI, I’M $Young Peezy !</p>
+              <p style="color: aliceblue; font-size: 1.2em;">
+                Yo, it's Young Peezy. You know me as Pepe. But online, in my world, I'm Young Peezy. 
+                So I'm coming to Ethereum to be where I belong and show the world the other half of who I am. 
+                And who am I? I am Young Peezy...
+              </p>
+              <!-- Example button for joining community -->
+              <!-- <a href="https://t.me/pengonsol" class="join-button">JOIN COMMUNITY</a> -->
+            </div>
+          </div>
+        </div>
+        
+
+
+        
+        <div class="eggs_small">
+          <div data-id="tokenomics" class="egg_s">
+            <div>
+              <img src="assets/png/eggtop.png" />
+              <img src="assets/png/eggbottom.png" />
+              <p>About Us</p>
+            </div>
+          </div>
+          <div data-id="tokenomics" class="egg_s">
+            <div>
+              <img src="assets/png/eggtop.png" />
+              <img src="assets/png/eggbottom.png" />
+              <p>Tokenomics</p>
+            </div>
+          </div>
+          <div data-id="buy" class="egg_s">
+            <div>
+              <img src="assets/png/eggtop.png" />
+              <img src="assets/png/eggbottom.png" />
+              <p>How to Buy?</p>
+            </div>
+          </div>
+          <div data-id="questions" class="egg_s">
+            <div>
+              <img src="assets/png/eggtop.png" />
+              <img src="assets/png/eggbottom.png" />
+              <p>FAQ</p>
+            </div>
+          </div>
+        </div>
+        <div class="banner__bottom">
+          <img class="snow_bg" src="assets/svg/banner_elipse.svg" />
+          <img class="snow" src="assets/svg/snow.svg" />
+          <img class="ping" src="assets/png/pic1.png" />
+          <!-- <img class="pinghand" src="assets/png/pinghand.png" /> -->
+        </div>
+        <div class="_partners container">
+          <article class="partners"><h2>Our partners</h2></article>
+          <ul class="partners__list">
+            <li>
+              <a href="https://coinmarketcap.com/" target="_blank"
+                ><img src="assets/svg/partner1.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://dexscreener.com/" target="_blank"
+                ><img src="assets/svg/partner2.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://gotbit.io/" target="_blank"
+                ><img src="assets/svg/partner3.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.dextools.io/" target="_blank"
+                ><img src="assets/svg/partner4.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <img
+          class="banner__transition"
+          style="width: 100%"
+          src="assets/png/transition.png"
+        />
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__content">
+            <div class="about_text">
+              <div>
+                <h2 style="color: #f0f2f5;">about Young Peezy </h2>
+                <p style="color: #f0f2f5;">
+                  Young Peezy is the online alias of Pepe, Its simple ..
+
+                  In the world of Pepe, there is internet and on that internet
+                  there is social media and on that social media there is frens 
+                  and within those frens there is Young Peezy and will the real 
+                  Young Peezy pls stand up 
+
+                  Just like you reading this right now, logged into Telegram or X 
+                  maybe TikTok or YouTube all using an alias 
+
+                  So don't you get it yet ..
+
+                  Young Peezy is all of us
+                </p>
+              </div>
+              <!-- <img src="assets/svg/elipse.svg" /> -->
+              <img src="assets/png/bg4.png" />
+
+              
+            </div>
+            <!-- <img src="assets/png/pic4.jpg" /> -->
+          </div>
+        </div>
+      <!-- </section>
+      <section id="available" class="available">
+        <img
+          class="available__background"
+          src="assets/svg/available-background.svg"
+          alt=""
+        />
+        <div class="available__container container">
+          <h2 class="available__title">Available on</h2>
+          <div class="available__items">
+            <a
+              class="available__item available__item_mexc"
+              href="https://www.mexc.com/exchange/PENG_USDT"
+              target="_blank"
+              ><img src="assets/svg/mexc.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_raydium"
+              href="https://raydium.io/swap/?inputCurrency=sol&amp;outputCurrency=A3eME5CetyZPBoWbRUwY3tSe25S6tb18ba9ZPbWk9eFJ&amp;fixed=in"
+              target="_blank"
+              ><img src="assets/svg/raydium.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_gateio"
+              href="https://www.gate.io/trade/PENG_USDT"
+              target="_blank"
+              ><img src="assets/svg/gateio.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_lbank"
+              href="https://www.lbank.com/trade/peng_usdt"
+              target="_blank"
+              ><img src="assets/svg/lbank.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_okx"
+              href="https://www.okx.com/web3/dex-swap#inputChain=501&inputCurrency=11111111111111111111111111111111&outputChain=501&outputCurrency=A3eME5CetyZPBoWbRUwY3tSe25S6tb18ba9ZPbWk9eFJ"
+              target="_blank"
+              ><img src="assets/svg/okx5e1f.svg?v=2" alt="" /> </a
+            ><a
+              class="available__item available__item_poloniex"
+              href="https://poloniex.com/trade/PENG_USDT"
+              target="_blank"
+              ><img src="assets/svg/poloniex.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_bitget"
+              href="https://www.bitget.com/spot/PENGUSDT"
+              target="_blank"
+              ><img src="assets/svg/bitget.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_jupiter"
+              href="https://jup.ag/swap/SOL-PENG_A3eME5CetyZPBoWbRUwY3tSe25S6tb18ba9ZPbWk9eFJ"
+              target="_blank"
+              ><img src="assets/svg/jupiter.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_bingx"
+              href="https://bingx.com/spot/PENGUSDT/"
+              target="_blank"
+              ><img src="assets/svg/bingx.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section id="available" class="available">
+        <img
+          class="available__background"
+          src="assets/svg/available-background.svg"
+          alt=""
+        />
+        <div class="available__container container">
+          <h2 class="available__title">Partners</h2>
+          <div class="available__items">
+            <a
+              class="available__item available__item_hey-moon"
+              href="https://www.hellomoon.io/"
+              target="_blank"
+              ><img src="assets/svg/hey-moon.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_travala"
+              href="https://www.travala.com/"
+              target="_blank"
+              ><img src="assets/svg/travala.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_zebec"
+              href="https://zebec.io/"
+              target="_blank"
+              ><img src="assets/svg/zebec.svg" alt="" /> </a
+            ><a
+              class="available__item available__item_hey-wallet"
+              href="https://heywallet.com/"
+              target="_blank"
+              ><img src="assets/svg/hey-wallet.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </section> -->
+      <section class="tokenomics" id="tokenomics">
+        <div class="container">
+          <div class="tokens">
+            <h2>Young Peezy Tokenomics</h2>
+            <p><span style="color: #ffde68"></span></p>
+            <span
+              ><span id="numbers"
+                >A3eME5CetyZPBoWbRUwY3tSe25S6tb18ba9ZPbWk9eFJ</span
+              ><button onclick="copy()">Copy</button></span
+            >
+            <ul class="tokens__cards">
+              <li class="tokens__card">
+                <img src="assets/png/dred.png" />
+                <div>
+                  <div>
+                    <p>TAXES</p>
+                    <p>0/0</p>
+                  </div>
+                </div>
+              </li>
+              <li class="tokens__card">
+                <img src="assets/png/red.png" />
+                <div>
+                  <div>
+                    <p>MINT & freeze</p>
+                    <p>Revoked</p>
+                  </div>
+                </div>
+              </li>
+              <li class="tokens__card">
+                <img src="assets/png/green.png" />
+                <div>
+                  <div>
+                    <p>liquidity</p>
+                    <p>burned</p>
+                  </div>
+                </div>
+              </li>
+              <li class="tokens__card">
+                <img src="assets/png/blue.png" />
+                <div>
+                  <div>
+                    <p>total supply</p>
+                    <p>100 m</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+      <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-49a0b3b3" data-id="49a0b3b3" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-0265e20 elementor-widget elementor-widget-heading" data-id="0265e20" data-element_type="widget" data-widget_type="heading.default">
+                    
+                </div>
+    
+                <div class="how-to-container">
+                  <div class="elementor-widget-container" style="text-align: center;">
+                    <h2 class="elementor-heading-title elementor-size-default" style="margin: 0; font-size: 2rem; color: white;">How to Buy</h2>
+                </div>
+                    <div class="how-to-content">
+                        <div class="how-to-step">
+                            <h3 class="how-to-step-title">1. Install MetaMask and Add ETH</h3>
+                            <p class="how-to-step-content">Install Metamask Extension and Create an Account at <a href="https://metamask.io" target="_blank" style="color: #ffd700;">metamask.io</a>. Make sure your account has some ETH; you can buy ETH directly on MetaMask.</p>
+                        </div>
+                        <div class="how-to-step">
+                            <h3 class="how-to-step-title">2. Connect MetaMask to Uniswap</h3>
+                            <p class="how-to-step-content">Go to Uniswap and Connect MetaMask to Uniswap: Click Connect, select Token, then paste the contract: 0x636bd98fc13908e475f56d8a38a6e03616ec5563</p>
+                        </div>
+                        <div class="how-to-step">
+                            <h3 class="how-to-step-title">3. Swap ETH for WAT</h3>
+                            <p class="how-to-step-content">Connect your MetaMask to Uniswap and proceed to swap Ethereum for WAT tokens.</p>
+                        </div>
+                        <div class="how-to-step">
+                            <h3 class="how-to-step-title">4. Adjust Slippage and Gas Fees</h3>
+                            <p class="how-to-step-content">Use the right amount of slippage (0.5%-1%), if transaction doesn’t work increase gas on MetaMask.</p>
+                        </div>
+                        <div class="how-to-step">
+                            <h3 class="how-to-step-title">5. Import WAT Token to MetaMask</h3>
+                            <p class="how-to-step-content">To see your $WAT in your Metamask go into tokens, at the end click on import tokens, then click on Custom Token and paste the contract: 0x636bd98fc13908e475f56d8a38a6e03616ec5563 and import.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="elementor-element elementor-element-039fe6c elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="039fe6c" data-element_type="widget" data-widget_type="html.default">
+                  <div class="elementor-widget-container">
+                    <iframe src="https://app.uniswap.org/swap?exactField=output&amp;exactAmount=10&amp;outputCurrency=0x636bd98fc13908e475f56d8a38a6e03616ec5563&amp;chain=ethereum" title="Uniswap Swap" height="520px" width="100%"></iframe>
+                  </div>
+                </div>
+                
+                <div class="elementor-element elementor-element-76541904 wpr-button-icon-style-inline wpr-button-icon-position-right elementor-widget elementor-widget-wpr-button" data-id="76541904" data-element_type="widget" data-widget_type="wpr-button.default">
+                  <div class="elementor-widget-container" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                    <div class="wpr-button-wrap elementor-clearfix">
+                      <a class="wpr-button wpr-button-effect wpr-button-none" data-text="Go" href="https://app.uniswap.org/#/swap?outputCurrency=0x636bd98fc13908e475f56d8a38a6e03616ec5563" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; font-size: 1.2em; transition: background-color 0.3s ease;">
+                        <span class="wpr-button-content">
+                          <span class="wpr-button-text">Go To Uniswap</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        /* Example CSS for alignment */
+        .elementor-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .how-to-step {
+            margin-bottom: 20px;
+        }
+        .how-to-step-title {
+            cursor: pointer;
+        }
+        .how-to-step.active {
+            /* background-color: #f0f0f0; */
+            padding: 10px;
+        }
+    </style>
+    
+    <script>
+        document.querySelectorAll('.how-to-step-title').forEach(step => {
+            step.addEventListener('click', () => {
+                step.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+    
+
+      <!-- <section class="buy" id="buy">
+        <div class="container buy__content">
+          <img
+            style="width: 100dvw; position: absolute; top: -100px; z-index: -1"
+            src="assets/png/howto.png"
+          />
+          <img class="arrows" src="assets/png/arrows.png" />
+          <div>
+            <div>
+              <img src="assets/svg/icedbg.svg" alt="" />
+              <img src="assets/svg/icedbg2.svg" alt="" />
+            </div>
+            <div>
+              <img
+                class="invalid"
+                src="assets/svg/icedbg35e1f.svg?v=2"
+                alt=""
+              />
+              <img src="assets/svg/icedbg4.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="community">
+        <div class="container cm">
+          <div class="community_div">
+            <div class="xuy">
+              <img class="com_bg" src="assets/png/com_bg.png" />
+              <img class="com_photo" src="assets/png/pic5.png" />
+              <div>
+                <h2>Slide into our community!</h2>
+                <p>
+                  Join our Telegram and follow us on X for the latest updates
+                  and a warm welcome from our friendly community. Let’s glide
+                  towards millionaires together and enjoy the meme’s and artwork
+                  in the process!
+                </p>
+                <div>
+                  <a
+                    href="https://t.me/pengonsol"
+                    target="_blank"
+                    style="background-image: url('assets/svg/promolink.svg')"
+                    ><img src="assets/svg/tg2.svg" /> </a
+                  ><a
+                    href="https://twitter.com/pengonsolana"
+                    target="_blank"
+                    style="background-image: url('assets/svg/promolink2.svg')"
+                    ><img src="assets/svg/twitter2.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="laboratory" style="position: relative; padding: 20px; background-color: lightskyblue; overflow: hidden;">
+  <div class="laboratory__container container" style="display: flex; justify-content: center; align-items: center;">
+    <img
+      class="laboratory__title"
+      src="assets/png/pic2.jpg"
+      alt=""
+      style="width: 45%; margin-right: 5%;"
+    />
+    <img
+      class="laboratory__illustration"
+      src="assets/png/pic3.jpg"
+      alt=""
+      style="width: 45%;"
+    />
+  </div>
+  <script>
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+
+    function createMovingImage() {
+      const img = document.createElement('img');
+      img.src = 'assets/png/pic1.png';
+      img.style.position = 'absolute';
+      img.style.width = '30px';
+      img.style.height = '30px';
+      img.style.opacity = '0.8';
+      img.style.top = getRandomInt(100) + '%';
+      img.style.left = getRandomInt(100) + '%';
+      img.className = 'unique-moving-image';
+      return img;
+    }
+
+    const container = document.querySelector('.laboratory');
+    for (let i = 0; i < 30; i++) {
+      const img = createMovingImage();
+      container.appendChild(img);
+    }
+
+    function animateImages() {
+      const images = document.querySelectorAll('.unique-moving-image');
+      images.forEach(img => {
+        img.style.top = getRandomInt(100) + '%';
+        img.style.left = getRandomInt(100) + '%';
+        img.style.transition = 'top 2s linear, left 2s linear';
+      });
+    }
+
+    setInterval(animateImages, 2000);
+  </script>
+</section>
+
+      
+      <!-- <section class="questions" id="questions">
+        <img class="questions_bg" src="assets/png/Ellipse%2026.png" />
+        <div class="container">
+          <div class="questions_content">
+            <div class="questionsaa">
+              <h2 class="questionsaa__title">Any questions left?</h2>
+              <img src="assets/png/pic6.png" />
+            </div>
+            <div>
+              <ul
+                style="
+                  list-style: none;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                "
+              >
+                <li class="accordian">
+                  <div class="accordian_header">
+                    <p>Who is PENG?</p>
+                    <span class="plusbox"><div class="plusminus"></div></span>
+                  </div>
+                  <div class="accordian_body">
+                    <div>
+                      $PENG is a cute little penguin born on the Solana
+                      blockchain. People think he looks like PEPE the frog,
+                      however he is just a penguin!
+                    </div>
+                  </div>
+                </li>
+                <li class="accordian">
+                  <div class="accordian_header">
+                    <p>What chain is PENG on?</p>
+                    <span class="plusbox"><div class="plusminus"></div></span>
+                  </div>
+                  <div class="accordian_body">
+                    <div>$PENG is born on the Solana blockchain.</div>
+                  </div>
+                </li>
+                <li class="accordian">
+                  <div class="accordian_header">
+                    <p>How can I buy $PENG?</p>
+                    <span class="plusbox"><div class="plusminus"></div></span>
+                  </div>
+                  <div class="accordian_body">
+                    <div>
+                      Follow the instructions on our 'how you buy' section,
+                      silly 😉
+                    </div>
+                  </div>
+                </li>
+                <li class="accordian">
+                  <div class="accordian_header">
+                    <p>
+                      What is the predections of $PENG’s price in the future?
+                    </p>
+                    <span class="plusbox"><div class="plusminus"></div></span>
+                  </div>
+                  <div class="accordian_body">
+                    <div>
+                      We plan to go to the billions. However meme tokens have
+                      huge risks so always DYOR (do your own research)!
+                    </div>
+                  </div>
+                </li>
+                <li class="accordian">
+                  <div class="accordian_header">
+                    <p>Why does $YOUNG PEEZY look like PEPE?</p>
+                    <span class="plusbox"><div class="plusminus"></div></span>
+                  </div>
+                  <div class="accordian_body">
+                    <div>Hey! I’m just a penguin!</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <footer class="footer">
+        <!-- <img class="footer_bg" src="assets/png/Footer.png" /> -->
+      </footer>
+      <div class="footik">
+        <div class="content">
+          <div class="container">
+            <div>
+              <div>
+                <!-- <img src="assets/svg/pengsmall.svg" /> -->
+                <div>
+                  <img src="assets/png/cop.png" />
+                  <p>2024 $YOUNG PEEZY.</p>
+                </div>
+              </div>
+              <div class="footik__disclaimer">
+                <p>Disclaimer</p>
+                <p>
+                  I'm Young Peezy. 
+                  So I'm coming to Ethereum to be where I belong and show the world the other half of who I am.
+                </p>
+              </div>
+              <div><p style="max-width: 329px">$$YOUNG PEEZY .</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script2f95.js?v=1710185999"></script>
+  </body>
+</html>
