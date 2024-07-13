@@ -374,10 +374,6 @@ body {
 
 
 
-
-
-
-
 /* General styles for the navbar */
 .fixed-home {
   position: fixed;
@@ -395,9 +391,6 @@ body {
 
 .bg-purple {
   background-color: #aef006; /* Purple background color */
-}
-
-.bars-home {
   border: 5px solid #1B2256;
   border-radius: 20px;
 }
@@ -415,12 +408,10 @@ body {
 .list-home {
   display: flex;
   flex-direction: column;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
   padding: 1rem;
-  
 }
 
 .list-home a {
@@ -429,7 +420,6 @@ body {
   margin: 0 1rem;
   padding: 0.5rem 0;
   transition: color 0.3s ease;
-  
 }
 
 .list-home a:hover {
@@ -460,10 +450,8 @@ body {
   .bars img {
     cursor: pointer;
   }
-}
 
-/* Additional styles for responsive navbar toggling */
-@media (max-width: 991px) {
+  /* Additional styles for responsive navbar toggling */
   .navbar-active .list-home {
     display: flex;
     flex-direction: column;
@@ -473,6 +461,10 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 1001; /* Ensure it appears above the main content */
+    border: 5px solid #1B2256; /* Match desktop styling */
+    border-radius: 20px; /* Match desktop styling */
+    padding: 1rem; /* Match desktop padding */
   }
 }
 
@@ -652,26 +644,30 @@ body {
 <div id="home"></div>
       <header id="unique-header" class="header"  >
         <div class="fixed-home py-5">
-          <div class="containers ">
-            <div class="bg-purple bars-home" style="border: 5px solid #1B2256;border-radius: 20px">
+          <div class="containers">
+            <div class="bg-purple bars-home" style="border: 5px solid #1B2256; border-radius: 20px">
               <div class="position-relative">
-                <div class="position-absolute " style="top: -29px;left: -10px;">
+                <div class="position-absolute" style="top: -29px; left: -10px;">
                   <img src="assets/png/head.png" alt="" width="130">
-  
                 </div>
               </div>
-              <div class=" d-flex flex-column flex-lg-row align-items-center justify-content-lg-around justify-content-center list-home text-uppercase py-3" style="padding-left: 150px; color: #555;" id="menu-list">
+        
+              <!-- Navbar for both desktop and mobile -->
+              <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-around justify-content-center list-home text-uppercase py-3" style="padding-left: 150px; color: #555;" id="menu-list">
                 <a href="#home">Home</a>
-                <a href="#about">about</a>
-                <a href="#tokenomics">tokenomics</a>
-                <a href="#buy">How to buy</a>
+                <a href="#about">About</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#buy">How to Buy</a>
               </div>
+        
+              <!-- Hamburger menu for mobile -->
               <div class="h-100 d-flex d-lg-none align-items-center justify-content-end pe-3 bars">
                 <img src="bars.png" alt="" width="40">
               </div>
             </div>
           </div>
         </div>
+        
         <script>
           document.addEventListener('DOMContentLoaded', function() {
             const bars = document.querySelector('.bars');
@@ -682,6 +678,7 @@ body {
             });
           });
         </script>
+        
         
 
         <div class="image-behind-heading" ></div>
