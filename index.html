@@ -724,39 +724,171 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
       
-      <section class="community">
-        <div class="container cm">
-          <div class="community_div">
-            <div class="xuy">
-              <img class="com_bg" src="assets/png/com_bg.png" />
-              <img class="com_photo" src="assets/png/pic5.png" />
-              <div>
-                <h2>Slide into our community!</h2>
-                <p>
-                  Join our Telegram and follow us on X for the latest updates
-                  and a warm welcome from our friendly community. Let’s glide
-                  towards millionaires together and enjoy the meme’s and artwork
-                  in the process!
-                </p>
-                <div>
-                  <a
-                    href="https://t.me/pengonsol"
-                    target="_blank"
-                    style="background-image: url('assets/svg/promolink.svg')"
-                    ><img src="assets/svg/tg2.svg" /> </a
-                  ><a
-                    href="https://twitter.com/pengonsolana"
-                    target="_blank"
-                    style="background-image: url('assets/svg/promolink2.svg')"
-                    ><img src="assets/svg/twitter2.svg"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
+    
+    
+    
+    
+    <style>
+      /* Unique CSS for the community section */
+      .community-container {
+        background-color: #333;
+        color: #f0f2f5;
+        padding: 40px;
+        border-radius: 20px;
+        position: relative;
+        overflow: visible; /* Ensure overflow is visible for the circle */
+        text-align: center;
+        font-family: 'Bangers', cursive; /* Funky font */
+        max-width: 800px;
+        margin: 30px auto;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+      }
+      
+      .community-container::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: calc(100% + 30px);
+        height: calc(100% + 30px);
+        background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Funky gradient */
+        z-index: -1;
+        border-radius: 40px;
+        transition: transform 0.3s ease;
+        transform: scale(0.9);
+      }
+      
+      .community-container:hover::before {
+        transform: scale(1);
+      }
+      
+      .community-container h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        transition: color 0.3s ease;
+      }
+      
+      .community-container:hover h2 {
+        color: #ffe45f;
+      }
+      
+      .community-container p {
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+      
+      .community-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .community-links a {
+        display: inline-block;
+        margin: 0 10px;
+        background-color: transparent;
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+      
+      .community-links a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .community-links a:hover {
+        transform: scale(1.1);
+      }
+      
+      .community-circle {
+        position: absolute;
+        left: -250px; /* Adjust position to partially overlap */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px; /* Increase width for better visibility */
+        height: 300px; /* Increase height for better visibility */
+        overflow: visible; /* Ensure overflow is visible */
+      }
+      
+      .community-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: rotateImage 60s linear infinite; /* Slow rotating animation */
+      }
+      
 
+
+
+      .community-circle2 {
+        position: absolute;
+        right: -250px; /* Adjust position to partially overlap */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px; /* Increase width for better visibility */
+        height: 300px; /* Increase height for better visibility */
+        overflow: visible; /* Ensure overflow is visible */
+      }
+      
+      .community-circle2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: rotateImage 60s linear infinite; /* Slow rotating animation */
+      }
+
+
+      @keyframes rotateImage {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      </style>
+      
+      
+      <div class="community-container">
+        <h2>Slide into our community!</h2>
+        <p>
+          Join our Telegram and follow us on X for the latest updates
+          and a warm welcome from our friendly community. Let’s glide
+          towards millionaires together and enjoy the memes and artwork
+          in the process!
+        </p>
+        <div class="community-links">
+          <a href="https://t.me/pengonsol" target="_blank" style="background-image: url('assets/svg/promolink.svg')">
+            <img src="assets/svg/tg2.svg" alt="Telegram" />
+          </a>
+          <a href="https://twitter.com/pengonsolana" target="_blank" style="background-image: url('assets/svg/promolink2.svg')">
+            <img src="assets/svg/twitter2.svg" alt="Twitter" />
+          </a>
+        </div>
+        <div class="community-circle">
+          <img src="assets/png/pic5.png" alt="Circular Image" />
+        </div>
+        <div class="community-circle2">
+          <img src="assets/png/pic5.png" alt="Circular Image" />
+        </div>
+      </div>
+      
+      <script>
+      // JavaScript to add animations and movements
+      document.addEventListener('DOMContentLoaded', function() {
+        const circleImage = document.querySelector('.community-circle img');
+        circleImage.style.animation = 'rotateImage 60s linear infinite'; // JavaScript animation control
+      });
+      </script>
+      
+      
 
 
       <!-- background: url('assets/png/bg3.png'); -->
