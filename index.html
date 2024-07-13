@@ -3,6 +3,15 @@
   <head>
 
     <style>
+
+    .body{
+      background-color: #45a049;
+
+      }
+
+
+
+
      .how-to-body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -42,7 +51,7 @@
 .how-to-step-title {
   margin: 0;
   cursor: pointer;
-  background: rgba(183, 0, 255, 0.8);
+  background: rgba(170, 241, 4, 0.8);
   color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -75,7 +84,7 @@
 .wpr-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #45a049;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -138,10 +147,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #111;
+  /* background-color: #111; */
+  background-color: #45a049;
 }
 
 #unique-header {
+  background-color: #45a049;
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -247,7 +258,7 @@ body {
 
 
 .oddball-footer {
-  background-color: #333;
+  background-color: #0f7a2a;
   padding: 20px;
   color: white;
   text-align: center;
@@ -263,7 +274,7 @@ body {
   left: 0;
   width: 100%;
   height: 20px; /* Height of the curve */
-  background-color: #333;
+  background-color: #0f7a2a;
   border-top-left-radius: 50% 20px;
   border-top-right-radius: 50% 20px;
   z-index: -1; /* Behind the footer content */
@@ -306,7 +317,7 @@ body {
   position: relative;
   overflow: hidden;
   max-width: 800px; /* Increased max-width */
-  margin: 0 auto; /* Center align */
+  margin: 30px auto; /* Center align */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Increased shadow for depth */
 }
 
@@ -317,7 +328,7 @@ body {
   left: -15px;
   width: calc(100% + 30px);
   height: calc(100% + 30px);
-  background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Funky gradient */
+  background: linear-gradient(135deg, #005e21, #fee71a); /* Funky gradient */
   z-index: -1;
   border-radius: 40px; /* Increased border radius */
   transition: transform 0.3s ease;
@@ -367,9 +378,218 @@ body {
 
 
 
+/* General styles for the navbar */
+.fixed-home {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.containers {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.bg-purple {
+  background-color: #aef006; /* Purple background color */
+}
+
+.bars-home {
+  border: 5px solid #1B2256;
+  border-radius: 20px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  top: -29px;
+  left: -10px;
+}
+
+.list-home {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  
+}
+
+.list-home a {
+  color: #540707;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  
+}
+
+.list-home a:hover {
+  color: #ffeb3b; /* Change to a lighter color on hover */
+}
+
+.bars {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .list-home {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 991px) {
+  .bars {
+    display: flex;
+  }
+
+  .list-home {
+    display: none;
+  }
+
+  .bars img {
+    cursor: pointer;
+  }
+}
+
+/* Additional styles for responsive navbar toggling */
+@media (max-width: 991px) {
+  .navbar-active .list-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6a1b9a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+
+
+
+/* General styles for the section */
+.tokenomics {
+  padding: 50px 0;
+  /* background-color: #45a049; */
+  background: url('assets/png/bg4.png') no-repeat center center;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tokens h2 {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  /* margin-bottom: 20px; */
+}
+
+.tokens__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tokens__card {
+  background-color: #e7d215;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tokens__card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tokens__card div {
+  text-align: left;
+}
+
+.tokens__card p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Shake animation */
+@keyframes shake-left {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes shake-right {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.tokens__card:nth-child(odd) {
+  animation: shake-left 1s infinite;
+}
+
+.tokens__card:nth-child(even) {
+  animation: shake-right 1s infinite;
+}
+
+/* Styling for text boxes */
+.tokens span, .tokens button {
+  display: inline-block;
+  /* margin: 20px; */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0); /* Adjust transparency as needed */
+}
+
+.tokens button {
+  cursor: pointer;
+}
+
+.tokens button:hover {
+  background-color: #b50101;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tokens__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
 </style>
 
-  </style>
 
  
 
@@ -419,29 +639,69 @@ body {
       content="Yo, its Young Peezy, You know me as Pepe. But online in my world I'm
       Young Peezy."
     />
-    <link rel="stylesheet" href="css/main5e1f.css?v=2" />
+    <!-- <link rel="stylesheet" href="css/main5e1f.css?v=2" /> -->
   </head>
   <body>
     <main>
 
 
 
+      <div class="fixed-home py-5">
+        <div class="containers ">
+          <div class="bg-purple bars-home" style="border: 5px solid #1B2256;border-radius: 20px">
+            <div class="position-relative">
+              <div class="position-absolute " style="top: -29px;left: -10px;">
+                <img src="assets/png/head.png" alt="" width="130">
 
-      <header id="unique-header" class="header">
-        <div class="image-behind-heading"></div>
+              </div>
+            </div>
+            <div class=" d-flex flex-column flex-lg-row align-items-center justify-content-lg-around justify-content-center list-home text-uppercase py-3" style="padding-left: 150px; color: #555;" id="menu-list">
+              <a href="#home">Home</a>
+              <a href="#about">about</a>
+              <a href="#tokenomics">tokenomics</a>
+              <a href="#buy">How to buy</a>
+            </div>
+            <div class="h-100 d-flex d-lg-none align-items-center justify-content-end pe-3 bars">
+              <img src="bars.png" alt="" width="40">
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const bars = document.querySelector('.bars');
+          const menuList = document.querySelector('#menu-list');
+      
+          bars.addEventListener('click', function() {
+            menuList.classList.toggle('navbar-active');
+          });
+        });
+      </script>
+      
+
+<div id="home"></div>
+      <header id="unique-header" class="header"  >
+
+        <div class="image-behind-heading" ></div>
         <h1 class="yoyo" style="font-family: 'Comic Sans MS', cursive; font-size: 4em; color: #ffe45f; font-weight: bold; text-align: center;">YOUNG PEEZY</h1>
-        <div class="intro-text">
-          <p style="color: rgb(255, 249, 240); font-size: 1.4em; font-weight: bold; text-align: center;">HI, I’M $YOUNG PEEZY!</p>
-          <p style="color: aliceblue; font-size: 1em; text-align: center;">
+        <div class="intro-text" >
+          <p style="font-family: 'Comic Sans MS', cursive; color: rgb(255, 249, 240); font-size: 1.4em; font-weight: bold; text-align: center;">HI, I’M $YOUNG PEEZY!</p>
+          <p style="font-family: 'Comic Sans MS', cursive; color: aliceblue; font-size: 1em; text-align: center;">
             Yo, it's Young Peezy. You know me as Pepe. But online, in my world, I'm Young Peezy. 
             So I'm coming to Ethereum to be where I belong and show the world the other half of who I am. 
             And who am I? I am Young Peezy...  
           </p>
+
         </div>
+
         <section class="community">
           <a href="https://t.me/pengonsol" target="_blank" style="background-image: url('assets/svg/promolink.svg'); margin-right: 20px;"><img src="assets/svg/tg2.svg" /></a>
           <a href="https://twitter.com/pengonsolana" target="_blank" style="background-image: url('assets/svg/promolink2.svg');"><img src="assets/svg/twitter2.svg" /></a>
         </section>
+        <img style="width: 400px; height: 400px; position: absolute; top: 50%; right: 45px; transform: translateY(-25%);" src="assets/png/door.png" />
+        <img style="width: 400px; height: 400px; position: absolute; top: 50%; left: 45px; transform: translateY(-25%);" src="assets/png/door.png" />
+
+
       </header>
     
       <script>
@@ -472,7 +732,7 @@ body {
 
 
 
-      
+<!--       
       <section class="banner" id="banner">
         <div data-id="about" class="egg">
           <div>
@@ -544,7 +804,7 @@ body {
           <img class="snow_bg" src="assets/svg/banner_elipse.svg" />
           <img class="snow" src="assets/svg/snow.svg" />
           <img class="ping" src="assets/png/pic1.png" />
-          <!-- <img class="pinghand" src="assets/png/pinghand.png" /> -->
+          <img class="pinghand" src="assets/png/pinghand.png" />
         </div>
         <div class="_partners container">
           <article class="partners"><h2>Our partners</h2></article>
@@ -578,7 +838,7 @@ body {
         />
       </section>
 
-
+ -->
 
 
 <div class="crazy-info" id="about">
@@ -612,9 +872,9 @@ document.addEventListener('DOMContentLoaded', function() {
      
       
       <section class="tokenomics" id="tokenomics">
-        <div class="container">
+        <div class="container4">
           <div class="tokens">
-          <h2 class="yoyo2" style="font-family: 'Comic Sans MS', cursive; font-size: 3em; font: bold;">Young Peezy Tokenomics</h2>
+          <h2 class="yoyo2" style="font-family: 'Comic Sans MS', cursive; font-size: 3em; font: bold; color: #e7d215;">Young Peezy Tokenomics</h2>
 
             <!-- <h2>Young Peezy Tokenomics</h2> -->
             <p><span style="color: #ffde68"></span></p>
@@ -665,12 +925,33 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </section>
 
+      <script>
+        function copy() {
+          const copyText = document.getElementById("numbers").innerText;
+          navigator.clipboard.writeText(copyText).then(function() {
+            alert("Copied to clipboard: " + copyText);
+          }, function(err) {
+            console.error("Failed to copy: ", err);
+          });
+        }
+      </script>
+      
+      
+      
+
+
+
+
+
+
+
+
 
 
       <section class="how-to-body" id="buy">
         <div class="how-to-container">
           <div class="how-to-content">
-            <h2 style="text-align: center; font-family: 'Bangers', cursive; color: #ff00ff;">HOW TO BUY</h2>
+            <h2 style="text-align: center; font-family: 'Bangers', cursive; color: #2efb20;">HOW TO BUY</h2>
             <div class="how-to-step" data-step="1">
               <h3 class="how-to-step-title">1. Install MetaMask and Add ETH</h3>
               <p class="how-to-step-content">Install Metamask Extension and Create an Account at <a href="https://metamask.io" target="_blank" style="color: #ffd700;">metamask.io</a>. Make sure your account has some ETH; you can buy ETH directly on MetaMask.</p>
@@ -693,7 +974,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
           </div>
       
-          <div class="elementor-element elementor-element-039fe6c elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="039fe6c" data-element_type="widget" data-widget_type="html.default">
+          <!-- <div class="elementor-element elementor-element-039fe6c elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="039fe6c" data-element_type="widget" data-widget_type="html.default">
             <div class="elementor-widget-container">
               <iframe src="https://app.uniswap.org/swap?exactField=output&amp;exactAmount=10&amp;outputCurrency=0x636bd98fc13908e475f56d8a38a6e03616ec5563&amp;chain=ethereum" title="Uniswap Swap" height="520px" width="100%"></iframe>
             </div>
@@ -709,7 +990,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 </a>
               </div>
             </div>
+          </div> -->
+
+
+          <div class="elementor-element elementor-element-039fe6c elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="039fe6c" data-element_type="widget" data-widget_type="html.default">
+            <div class="elementor-widget-container">
+              <iframe src="https://app.uniswap.org/swap?exactField=output&amp;exactAmount=10&amp;&amp;chain=ethereum" title="Uniswap Swap" height="520px" width="100%"></iframe>
+            </div>
           </div>
+      
+          <div class="elementor-element elementor-element-76541904 wpr-button-icon-style-inline wpr-button-icon-position-right elementor-widget elementor-widget-wpr-button" data-id="76541904" data-element_type="widget" data-widget_type="wpr-button.default">
+            <div class="elementor-widget-container" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+              <div class="wpr-button-wrap elementor-clearfix">
+                <a class="wpr-button wpr-button-effect wpr-button-none" data-text="Go" href="https://app.uniswap.org/#/swap?" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; font-size: 1.2em; transition: background-color 0.3s ease;">
+                  <span class="wpr-button-content">
+                    <span class="wpr-button-text">Go To Uniswap</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
       </section>
       
@@ -900,19 +1204,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <!-- background: url('assets/png/bg3.png'); -->
 
-      <section class="laboratory" style="position: relative; padding: 20px; overflow: hidden;">
+      <section class="laboratory" style="   background-color: #45a049;  position: relative; padding: 20px; overflow: hidden;">
         <div class="laboratory__container container" style="display: flex; justify-content: center; align-items: center; position: relative; z-index: 10;">
           <img
             class="laboratory__title"
             src="assets/png/pic2.jpg"
             alt=""
-            style="width: 70%; margin-right: 5%;"
+            style="width: 30%; margin-right: 5%;"
           />
           <img
             class="laboratory__illustration"
             src="assets/png/pic3.jpg"
             alt=""
-            style="width: 70%; margin-right: 5%;"
+            style="width: 30%; margin-right: 5%;"
           />
         </div>
         <script>
