@@ -144,112 +144,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  /* background-color: #111; */
-  background-color: #45a049;
-}
-
-#unique-header {
-  background-color: #45a049;
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#unique-header h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 4rem;
-  color: white;
-  text-align: center;
-  z-index: 10; /* Ensure the heading is above the background image */
-  margin-bottom: 20px; /* Space between heading and links */
-}
-
-.intro-text {
-  text-align: start;
-  color: aliceblue;
-  max-width: 600px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  margin: 20px;
-  z-index: 10; /* Ensure the intro text is above the background image */
-}
-
-.intro-text p {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-.community {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0 20px; /* Add some padding to the sides */
-  position: absolute;
-  bottom: 10px; /* Position links at the bottom */
-  z-index: 10;
-}
-
-.community a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 110px; /* Adjust size for smaller screens */
-  height: 110px; /* Adjust size for smaller screens */
-  background-size: contain; /* Ensure the background image fully fits within the container */
-  background-repeat: no-repeat; /* Prevent repeating of the background image */
-  background-position: center center; /* Center the background image */
-}
-
-.community a:nth-child(2) {
-  margin-left: 10px; /* Add margin between the links */
-}
-
-#unique-header .moving-image {
-  position: absolute;
-  width: 50px; /* Adjust size as needed */
-  height: 50px;
-  background-image: url('assets/png/head.png');
-  background-size: cover;
-  animation: move linear infinite;
-  z-index: 1; /* Ensure the moving images are behind the text */
-}
-
-@keyframes move {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #45a049;
   }
-  100% {
-    transform: translate(100vw, 100vh) rotate(360deg);
-  }
-}
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .community {
+  #unique-header {
+    background-color: #45a049;
     position: relative;
-    margin-top: 20px; /* Adjust margin for spacing */
-    justify-content: space-around; /* Adjust alignment for smaller screens */
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #unique-header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    text-align: start;
+    color: aliceblue;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    z-index: 10;
+  }
+
+  .intro-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+
+  .community {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
   }
 
   .community a {
-    width: 60px; /* Adjust size for smaller screens */
-    height: 60px; /* Adjust size for smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .community a:nth-child(2) {
-    margin-left: 0; /* Remove margin between the links on smaller screens */
+    margin-left: 10px;
   }
-}
 
+  #unique-header .moving-image {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('assets/png/head.png');
+    background-size: cover;
+    animation: move linear infinite;
+    z-index: 1;
+  }
 
+  @keyframes move {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate(100vw, 100vh) rotate(360deg);
+    }
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .community {
+      position: relative;
+      margin-top: 20px;
+      justify-content: space-around;
+    }
+
+    .community a {
+      width: 60px;
+      height: 60px;
+    }
+
+    .community a:nth-child(2) {
+      margin-left: 0;
+    }
+  }
+
+  /* Responsive styling for images */
+  .door-img {
+    width: 100%; /* Ensure image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Limit maximum width */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
 
 
@@ -371,6 +378,9 @@ body {
     transform: translateY(0);
   }
 }
+
+
+
 
 
 /* Navbar styling */
@@ -623,26 +633,26 @@ body {
         
         
         
-
-        <div class="image-behind-heading" ></div>
-        <h1 class="yoyo" style="font-family: 'Comic Sans MS', cursive; font-size: 4em; color: #ffe45f; font-weight: bold; text-align: center;">YOUNG PEEZY</h1>
-        <div class="intro-text" >
-          <p style="font-family: 'Comic Sans MS', cursive; color: rgb(255, 249, 240); font-size: 1.4em; font-weight: bold; text-align: center;">HI, I’M $YOUNG PEEZY!</p>
-          <p style="font-family: 'Comic Sans MS', cursive; color: aliceblue; font-size: 1em; text-align: center;">
+        <div class="image-behind-heading"></div>
+        <h1 class="yoyo">YOUNG PEEZY</h1>
+        <div class="intro-text">
+          <p>HI, I’M $YOUNG PEEZY!</p>
+          <p>
             Yo, it's Young Peezy. You know me as Pepe. But online, in my world, I'm Young Peezy. 
             So I'm coming to Ethereum to be where I belong and show the world the other half of who I am. 
-            And who am I? I am Young Peezy...  
+            And who am I? I am Young Peezy...
           </p>
-
         </div>
-
+        
         <section class="community">
           <a href="https:#" target="_blank" style="background-image: url('assets/svg/promolink.svg'); margin-right: 20px;"><img src="assets/svg/tg2.svg" /></a>
           <a href="https:#" target="_blank" style="background-image: url('assets/svg/promolink2.svg');"><img src="assets/svg/twitter2.svg" /></a>
         </section>
-        <img style="width: 400px; height: 400px; position: absolute; top: 50%; right: 45px; transform: translateY(-25%);" src="assets/png/door.png" />
-        <img style="width: 400px; height: 400px; position: absolute; top: 50%; left: 45px; transform: translateY(-25%);" src="assets/png/door.png" />
-
+        
+        <img class="door-img" src="assets/png/door.png" style="right: 45px;" />
+        <img class="door-img" src="assets/png/door.png" style="left: 45px;" />
+        
+        
 
       </header>
 
