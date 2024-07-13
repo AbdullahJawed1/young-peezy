@@ -479,6 +479,7 @@ body {
 
 
 
+
 /* General styles for the section */
 .tokenomics {
   padding: 50px 0;
@@ -646,41 +647,42 @@ body {
 
 
 
-      <div class="fixed-home py-5">
-        <div class="containers ">
-          <div class="bg-purple bars-home" style="border: 5px solid #1B2256;border-radius: 20px">
-            <div class="position-relative">
-              <div class="position-absolute " style="top: -29px;left: -10px;">
-                <img src="assets/png/head.png" alt="" width="130">
-
-              </div>
-            </div>
-            <div class=" d-flex flex-column flex-lg-row align-items-center justify-content-lg-around justify-content-center list-home text-uppercase py-3" style="padding-left: 150px; color: #555;" id="menu-list">
-              <a href="#home">Home</a>
-              <a href="#about">about</a>
-              <a href="#tokenomics">tokenomics</a>
-              <a href="#buy">How to buy</a>
-            </div>
-            <div class="h-100 d-flex d-lg-none align-items-center justify-content-end pe-3 bars">
-              <img src="bars.png" alt="" width="40">
-            </div>
-          </div>
-        </div>
-      </div>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const bars = document.querySelector('.bars');
-          const menuList = document.querySelector('#menu-list');
-      
-          bars.addEventListener('click', function() {
-            menuList.classList.toggle('navbar-active');
-          });
-        });
-      </script>
       
 
 <div id="home"></div>
       <header id="unique-header" class="header"  >
+        <div class="fixed-home py-5">
+          <div class="containers ">
+            <div class="bg-purple bars-home" style="border: 5px solid #1B2256;border-radius: 20px">
+              <div class="position-relative">
+                <div class="position-absolute " style="top: -29px;left: -10px;">
+                  <img src="assets/png/head.png" alt="" width="130">
+  
+                </div>
+              </div>
+              <div class=" d-flex flex-column flex-lg-row align-items-center justify-content-lg-around justify-content-center list-home text-uppercase py-3" style="padding-left: 150px; color: #555;" id="menu-list">
+                <a href="#home">Home</a>
+                <a href="#about">about</a>
+                <a href="#tokenomics">tokenomics</a>
+                <a href="#buy">How to buy</a>
+              </div>
+              <div class="h-100 d-flex d-lg-none align-items-center justify-content-end pe-3 bars">
+                <img src="bars.png" alt="" width="40">
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const bars = document.querySelector('.bars');
+            const menuList = document.querySelector('#menu-list');
+        
+            bars.addEventListener('click', function() {
+              menuList.classList.toggle('navbar-active');
+            });
+          });
+        </script>
+        
 
         <div class="image-behind-heading" ></div>
         <h1 class="yoyo" style="font-family: 'Comic Sans MS', cursive; font-size: 4em; color: #ffe45f; font-weight: bold; text-align: center;">YOUNG PEEZY</h1>
