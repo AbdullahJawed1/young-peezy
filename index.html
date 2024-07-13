@@ -95,11 +95,91 @@
   background-color: #45a049;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+}
 
+#unique-header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#unique-header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  z-index: 10; /* Ensure the heading is above the background image */
+  margin-bottom: 20px; /* Space between heading and links */
+}
 
+.intro-text {
+  text-align: center;
+  color: aliceblue;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+}
 
+.intro-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.community {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; /* Add some padding to the sides */
+  position: absolute;
+  bottom: 10px; /* Position links at the bottom */
+  z-index: 10;
+}
+
+.community a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-size: contain; /* Ensure the background image fully fits within the container */
+  background-repeat: no-repeat; /* Prevent repeating of the background image */
+  background-position: center center; /* Center the background image */
+}
+
+.community a:nth-child(2) {
+  margin-left: 20px; /* Add margin between the links */
+}
+
+#unique-header .moving-image {
+  position: absolute;
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  background-image: url('assets/png/head.png');
+  background-size: cover;
+  animation: move linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(100vw, 100vh) rotate(360deg);
+  }
+}
 
   </style>
 
@@ -147,25 +227,84 @@
   </head>
   <body>
     <main>
-      <header class="header">
+      <header id="unique-header" class="header">
 
 
 
 
+        <header id="unique-header" class="header">
+          <section class="community">
+            <div class="container cm">
+              <div class="community_div">
+                <div class="xuy">
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="image-behind-heading"></div>
+          <h1 class="funky-font">YOUNG PEEZY</h1>
+          <div class="intro-text">
+            <p style="color: aliceblue; font-size: 2em; font-weight: bold;">HI, I’M $YOUNG PEEZY!</p>
+            <p style="color: aliceblue; font-size: 1.2em;">
+              Yo, it's Young Peezy. You know me as Pepe. But online, in my world, I'm Young Peezy. 
+              So I'm coming to Ethereum to be where I belong and show the world the other half of who I am. 
+              And who am I? I am Young Peezy...  
+            </p>
+          </div>
+          <section class="community">
+            <a
+              href="https://t.me/pengonsol"
+              target="_blank"
+              style="background-image: url('assets/svg/promolink.svg'); margin-right: 20px;"
+              ><img src="assets/svg/tg2.svg" />
+            </a>
+            <a
+              href="https://twitter.com/pengonsolana"
+              target="_blank"
+              style="background-image: url('assets/svg/promolink2.svg');"
+              ><img src="assets/svg/twitter2.svg"
+            /></a>
+          </section>
+        </header>
+        
 
 
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.getElementById('unique-header');
+    
+      for (let i = 0; i < 80; i++) {
+        const img = document.createElement('div');
+        img.className = 'moving-image';
+    
+        // Random starting position
+        img.style.top = Math.random() * 100 + 'vh';
+        img.style.left = Math.random() * 100 + 'vw';
+    
+        // Random direction and speed
+        const duration = Math.random() * 5 + 2; // Speed up the motion
+        img.style.animationDuration = `${duration}s`;
+        img.style.animationDirection = Math.random() < 0.5 ? 'normal' : 'reverse'; // Random direction
+    
+        // Add the image to the header
+        header.appendChild(img);
+      }
+    });
+    </script>
+    
+      
+
+      </header>
       
 
 
 
 
 
-
-
-
-
-
-      </header>
+      
       <section class="banner" id="banner">
         <div data-id="about" class="egg">
           <div>
@@ -199,23 +338,7 @@
 
 
 
-        <div class="container">
-          <div class="banner__top">
-            <img src="assets/png/bg3.png" style="width: 100%; max-width: 100%; height: auto;" alt="Background Image">
-            <div class="banner__overlay"></div>
-            <div class="banner__text">
-              <p style="color: aliceblue; font-size: 2em; font-weight: bold;">HI, I’M $Young Peezy !</p>
-              <p style="color: aliceblue; font-size: 1.2em;">
-                Yo, it's Young Peezy. You know me as Pepe. But online, in my world, I'm Young Peezy. 
-                So I'm coming to Ethereum to be where I belong and show the world the other half of who I am. 
-                And who am I? I am Young Peezy...
-              </p>
-              <!-- Example button for joining community -->
-              <!-- <a href="https://t.me/pengonsol" class="join-button">JOIN COMMUNITY</a> -->
-            </div>
-          </div>
-        </div>
-        
+
 
 
         
@@ -286,6 +409,9 @@
           src="assets/png/transition.png"
         />
       </section>
+
+
+      
       <section class="about" id="about">
         <div class="container">
           <div class="about__content">
@@ -316,98 +442,10 @@
             <!-- <img src="assets/png/pic4.jpg" /> -->
           </div>
         </div>
-      <!-- </section>
-      <section id="available" class="available">
-        <img
-          class="available__background"
-          src="assets/svg/available-background.svg"
-          alt=""
-        />
-        <div class="available__container container">
-          <h2 class="available__title">Available on</h2>
-          <div class="available__items">
-            <a
-              class="available__item available__item_mexc"
-              href="https://www.mexc.com/exchange/PENG_USDT"
-              target="_blank"
-              ><img src="assets/svg/mexc.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_raydium"
-              href="https://raydium.io/swap/?inputCurrency=sol&amp;outputCurrency=A3eME5CetyZPBoWbRUwY3tSe25S6tb18ba9ZPbWk9eFJ&amp;fixed=in"
-              target="_blank"
-              ><img src="assets/svg/raydium.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_gateio"
-              href="https://www.gate.io/trade/PENG_USDT"
-              target="_blank"
-              ><img src="assets/svg/gateio.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_lbank"
-              href="https://www.lbank.com/trade/peng_usdt"
-              target="_blank"
-              ><img src="assets/svg/lbank.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_okx"
-              href="https://www.okx.com/web3/dex-swap#inputChain=501&inputCurrency=11111111111111111111111111111111&outputChain=501&outputCurrency=A3eME5CetyZPBoWbRUwY3tSe25S6tb18ba9ZPbWk9eFJ"
-              target="_blank"
-              ><img src="assets/svg/okx5e1f.svg?v=2" alt="" /> </a
-            ><a
-              class="available__item available__item_poloniex"
-              href="https://poloniex.com/trade/PENG_USDT"
-              target="_blank"
-              ><img src="assets/svg/poloniex.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_bitget"
-              href="https://www.bitget.com/spot/PENGUSDT"
-              target="_blank"
-              ><img src="assets/svg/bitget.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_jupiter"
-              href="https://jup.ag/swap/SOL-PENG_A3eME5CetyZPBoWbRUwY3tSe25S6tb18ba9ZPbWk9eFJ"
-              target="_blank"
-              ><img src="assets/svg/jupiter.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_bingx"
-              href="https://bingx.com/spot/PENGUSDT/"
-              target="_blank"
-              ><img src="assets/svg/bingx.svg" alt=""
-            /></a>
-          </div>
-        </div>
-      </section>
-      <section id="available" class="available">
-        <img
-          class="available__background"
-          src="assets/svg/available-background.svg"
-          alt=""
-        />
-        <div class="available__container container">
-          <h2 class="available__title">Partners</h2>
-          <div class="available__items">
-            <a
-              class="available__item available__item_hey-moon"
-              href="https://www.hellomoon.io/"
-              target="_blank"
-              ><img src="assets/svg/hey-moon.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_travala"
-              href="https://www.travala.com/"
-              target="_blank"
-              ><img src="assets/svg/travala.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_zebec"
-              href="https://zebec.io/"
-              target="_blank"
-              ><img src="assets/svg/zebec.svg" alt="" /> </a
-            ><a
-              class="available__item available__item_hey-wallet"
-              href="https://heywallet.com/"
-              target="_blank"
-              ><img src="assets/svg/hey-wallet.svg" alt=""
-            /></a>
-          </div>
-        </div>
-      </section> -->
+      
+     </section>
+     
+      
       <section class="tokenomics" id="tokenomics">
         <div class="container">
           <div class="tokens">
