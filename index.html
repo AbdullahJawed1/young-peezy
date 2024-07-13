@@ -451,6 +451,33 @@ body {
     cursor: pointer;
   }
 
+  @media (max-width: 991px) {
+  .bars {
+    display: flex;
+  }
+
+  .list-home {
+    display: none;
+    /* Keep the existing mobile styles intact */
+  }
+
+  .navbar-active .list-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6a1b9a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    border: 5px solid #1B2256;
+    border-radius: 20px;
+    padding: 1rem;
+  }
+}
+
+
   /* Additional styles for responsive navbar toggling */
   .navbar-active .list-home {
     display: flex;
@@ -644,9 +671,9 @@ body {
 
 <div id="home"></div>
       <header id="unique-header" class="header"  >
-        <div class="fixed-home py-5">
+        <div class="fixed-home py-3"> <!-- Adjusted py-3 for mobile spacing -->
           <div class="containers">
-            <div class="bg-purple bars-home" style="border: 5px solid #1B2256; border-radius: 20px">
+            <div class="bg-purple bars-home">
               <div class="position-relative">
                 <div class="position-absolute" style="top: -29px; left: -10px;">
                   <img src="assets/png/head.png" alt="" width="130">
@@ -654,7 +681,7 @@ body {
               </div>
         
               <!-- Navbar for both desktop and mobile -->
-              <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-around justify-content-center list-home text-uppercase py-3" style="padding-left: 150px; color: #555;" id="menu-list">
+              <div class="list-home text-uppercase" id="menu-list">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#tokenomics">Tokenomics</a>
@@ -668,6 +695,7 @@ body {
             </div>
           </div>
         </div>
+        
         
         <script>
           document.addEventListener('DOMContentLoaded', function() {
