@@ -217,6 +217,55 @@ body {
   }
 }
 
+
+
+
+
+.oddball-footer {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: relative; /* Required for absolute positioning */
+  z-index: 1; /* Ensure it's above other content */
+  border-radius: 50px 50px 0 0; /* Crazy curvy border */
+}
+
+.oddball-footer::before {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  height: 20px; /* Height of the curve */
+  background-color: #333;
+  border-top-left-radius: 50% 20px;
+  border-top-right-radius: 50% 20px;
+  z-index: -1; /* Behind the footer content */
+}
+
+/* Animation Keyframes */
+@keyframes oddball-scale-up {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Funky font style */
+.oddball-footer p {
+  font-family: 'Comic Sans MS', cursive; /* Funky font */
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+/* Unique JavaScript using oddball classes */
+.oddball-animate-footer {
+  animation: oddball-scale-up 0.3s ease-in-out forwards;
+}
+
   </style>
 
  
@@ -656,7 +705,10 @@ body {
       </section>
 
 
-      <section class="laboratory" style="position: relative; padding: 20px; background-color: lightskyblue; overflow: hidden;">
+
+      <!-- background: url('assets/png/bg3.png'); -->
+
+      <section class="laboratory" style="position: relative; padding: 20px;  overflow: hidden;">
   <div class="laboratory__container container" style="display: flex; justify-content: center; align-items: center;">
     <img
       class="laboratory__title"
@@ -690,7 +742,7 @@ body {
     }
 
     const container = document.querySelector('.laboratory');
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 40; i++) {
       const img = createMovingImage();
       container.appendChild(img);
     }
@@ -709,111 +761,42 @@ body {
 </section>
 
       
-      <!-- <section class="questions" id="questions">
-        <img class="questions_bg" src="assets/png/Ellipse%2026.png" />
-        <div class="container">
-          <div class="questions_content">
-            <div class="questionsaa">
-              <h2 class="questionsaa__title">Any questions left?</h2>
-              <img src="assets/png/pic6.png" />
-            </div>
-            <div>
-              <ul
-                style="
-                  list-style: none;
-                  display: flex;
-                  flex-direction: column;
-                  gap: 20px;
-                "
-              >
-                <li class="accordian">
-                  <div class="accordian_header">
-                    <p>Who is PENG?</p>
-                    <span class="plusbox"><div class="plusminus"></div></span>
-                  </div>
-                  <div class="accordian_body">
-                    <div>
-                      $PENG is a cute little penguin born on the Solana
-                      blockchain. People think he looks like PEPE the frog,
-                      however he is just a penguin!
-                    </div>
-                  </div>
-                </li>
-                <li class="accordian">
-                  <div class="accordian_header">
-                    <p>What chain is PENG on?</p>
-                    <span class="plusbox"><div class="plusminus"></div></span>
-                  </div>
-                  <div class="accordian_body">
-                    <div>$PENG is born on the Solana blockchain.</div>
-                  </div>
-                </li>
-                <li class="accordian">
-                  <div class="accordian_header">
-                    <p>How can I buy $PENG?</p>
-                    <span class="plusbox"><div class="plusminus"></div></span>
-                  </div>
-                  <div class="accordian_body">
-                    <div>
-                      Follow the instructions on our 'how you buy' section,
-                      silly 😉
-                    </div>
-                  </div>
-                </li>
-                <li class="accordian">
-                  <div class="accordian_header">
-                    <p>
-                      What is the predections of $PENG’s price in the future?
-                    </p>
-                    <span class="plusbox"><div class="plusminus"></div></span>
-                  </div>
-                  <div class="accordian_body">
-                    <div>
-                      We plan to go to the billions. However meme tokens have
-                      huge risks so always DYOR (do your own research)!
-                    </div>
-                  </div>
-                </li>
-                <li class="accordian">
-                  <div class="accordian_header">
-                    <p>Why does $YOUNG PEEZY look like PEPE?</p>
-                    <span class="plusbox"><div class="plusminus"></div></span>
-                  </div>
-                  <div class="accordian_body">
-                    <div>Hey! I’m just a penguin!</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+<footer class="oddball-footer">
+  <div class="weird-footik">
+    <div class="unusual-content">
+      <div class="peculiar-container">
+        <div>
+          <div>
+            <img src="assets/png/cop.png" />
+            <p>2024 $YOUNG PEEZY.</p>
           </div>
         </div>
-      </section> -->
-      <footer class="footer">
-        <!-- <img class="footer_bg" src="assets/png/Footer.png" /> -->
-      </footer>
-      <div class="footik">
-        <div class="content">
-          <div class="container">
-            <div>
-              <div>
-                <!-- <img src="assets/svg/pengsmall.svg" /> -->
-                <div>
-                  <img src="assets/png/cop.png" />
-                  <p>2024 $YOUNG PEEZY.</p>
-                </div>
-              </div>
-              <div class="footik__disclaimer">
-                <p>Disclaimer</p>
-                <p>
-                  I'm Young Peezy. 
-                  So I'm coming to Ethereum to be where I belong and show the world the other half of who I am.
-                </p>
-              </div>
-              <div><p style="max-width: 329px">$$YOUNG PEEZY .</p></div>
-            </div>
-          </div>
+        <div class="footik-disclaimer">
+          <p>Disclaimer</p>
+          <p>
+            I'm Young Peezy. 
+            So I'm coming to Ethereum to be where I belong and show the world the other half of who I am.
+          </p>
         </div>
       </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Unique JavaScript using oddball classes
+const oddballFooter = document.querySelector('.oddball-footer');
+
+oddballFooter.addEventListener('mouseenter', () => {
+  oddballFooter.classList.add('oddball-animate-footer');
+});
+
+oddballFooter.addEventListener('mouseleave', () => {
+  oddballFooter.classList.remove('oddball-animate-footer');
+});
+</script>
+
+
     </main>
     <script src="../ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/script2f95.js?v=1710185999"></script>
