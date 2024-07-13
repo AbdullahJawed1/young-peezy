@@ -131,6 +131,9 @@
   background-color: #45a049;
 }
 
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
@@ -160,7 +163,7 @@ body {
 }
 
 .intro-text {
-  text-align: center;
+  text-align: start;
   color: aliceblue;
   max-width: 600px;
   padding: 20px;
@@ -172,6 +175,7 @@ body {
 .intro-text p {
   font-size: 1.2em;
   line-height: 1.6;
+  
 }
 
 .community {
@@ -366,7 +370,7 @@ body {
  
 
     <meta charset="UTF-8" />
-    <link
+    <!-- <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/favicon/apple-touch-icon.png"
@@ -389,7 +393,14 @@ body {
       href="assets/favicon/safari-pinned-tab.svg"
       color="#45aeea"
     />
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" /> -->
+
+
+    <link rel="icon" type="image/png" href="assets/png/head.png">
+
+
+
+
     <meta name="msapplication-TileColor" content="#45aeea" />
     <meta
       name="msapplication-config"
@@ -411,79 +422,46 @@ body {
 
 
 
-        <header id="unique-header" class="header">
-
-          <section class="community">
-            <div class="container cm">
-              <div class="community_div">
-                <div class="xuy">
-                  
-                </div>
-              </div>
-            </div>
-          </section>
-          <div class="image-behind-heading"></div>
-          <h1 class="yoyo" style="font-family: 'Comic Sans MS', cursive; font-size: 4em; color: #ffe45f; font: bold;">YOUNG PEEZY</h1>
-          <!-- <h1 class="yoyo" style="font-family: 'Comic Sans MS', cursive; font-size: 6em; color: #ffe45f; font-weight: bold; text-shadow: 0 0 10px rgba(255, 228, 95, 0.8), 0 0 20px rgba(255, 228, 95, 0.6), 0 0 30px rgba(255, 228, 95, 0.4), 0 0 40px rgba(255, 228, 95, 0.2), 0 0 50px rgba(255, 228, 95, 0.1), 0 0 75px rgba(255, 228, 95, 0.05);">
-            YOUNG PEEZY
-          </h1> -->
-          
-          <div class="intro-text">
-            <p style="color: rgb(255, 249, 240); font-size: 1.4em; font-weight: bold;">HI, I’M $YOUNG PEEZY!</p>
-            <p style="color: aliceblue; font-size: 1em;">
-              Yo, it's Young Peezy. You know me as Pepe. But online, in my world, I'm Young Peezy. 
-              So I'm coming to Ethereum to be where I belong and show the world the other half of who I am. 
-              And who am I? I am Young Peezy...  
-            </p>
-          </div>
-          <section class="community">
-            <a
-              href="https://t.me/pengonsol"
-              target="_blank"
-              style="background-image: url('assets/svg/promolink.svg'); margin-right: 20px;"
-              ><img src="assets/svg/tg2.svg" />
-            </a>
-            <a
-              href="https://twitter.com/pengonsolana"
-              target="_blank"
-              style="background-image: url('assets/svg/promolink2.svg');"
-              ><img src="assets/svg/twitter2.svg"
-            /></a>
-          </section>
-
-          
-        </header>
-        
-
-
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const header = document.getElementById('unique-header');
-    
-      for (let i = 0; i < 80; i++) {
-        const img = document.createElement('div');
-        img.className = 'moving-image';
-    
-        // Random starting position
-        img.style.top = Math.random() * 100 + 'vh';
-        img.style.left = Math.random() * 100 + 'vw';
-    
-        // Random direction and speed
-        const duration = Math.random() * 5 + 2; // Speed up the motion
-        img.style.animationDuration = `${duration}s`;
-        img.style.animationDirection = Math.random() < 0.5 ? 'normal' : 'reverse'; // Random direction
-    
-        // Add the image to the header
-        header.appendChild(img);
-      }
-    });
-    </script>
-    
-      
-
+      <header id="unique-header" class="header">
+        <div class="image-behind-heading"></div>
+        <h1 class="yoyo" style="font-family: 'Comic Sans MS', cursive; font-size: 4em; color: #ffe45f; font-weight: bold; text-align: center;">YOUNG PEEZY</h1>
+        <div class="intro-text">
+          <p style="color: rgb(255, 249, 240); font-size: 1.4em; font-weight: bold; text-align: center;">HI, I’M $YOUNG PEEZY!</p>
+          <p style="color: aliceblue; font-size: 1em; text-align: center;">
+            Yo, it's Young Peezy. You know me as Pepe. But online, in my world, I'm Young Peezy. 
+            So I'm coming to Ethereum to be where I belong and show the world the other half of who I am. 
+            And who am I? I am Young Peezy...  
+          </p>
+        </div>
+        <section class="community">
+          <a href="https://t.me/pengonsol" target="_blank" style="background-image: url('assets/svg/promolink.svg'); margin-right: 20px;"><img src="assets/svg/tg2.svg" /></a>
+          <a href="https://twitter.com/pengonsolana" target="_blank" style="background-image: url('assets/svg/promolink2.svg');"><img src="assets/svg/twitter2.svg" /></a>
+        </section>
       </header>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const header = document.getElementById('unique-header');
+      
+          for (let i = 0; i < 80; i++) {
+            const img = document.createElement('div');
+            img.className = 'moving-image';
+      
+            // Random starting position
+            img.style.top = Math.random() * 100 + 'vh';
+            img.style.left = Math.random() * 100 + 'vw';
+      
+            // Random direction and speed
+            const duration = Math.random() * 5 + 2; // Speed up the motion
+            img.style.animationDuration = `${duration}s`;
+            img.style.animationDirection = Math.random() < 0.5 ? 'normal' : 'reverse'; // Random direction
+      
+            // Add the image to the header
+            header.appendChild(img);
+          }
+        });
+      </script>
+      
       
 
 
@@ -766,7 +744,7 @@ document.addEventListener('DOMContentLoaded', function() {
         text-align: center;
         font-family: 'Bangers', cursive; /* Funky font */
         max-width: 800px;
-        margin: 30px auto;
+        margin: 50px auto;
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
       }
       
