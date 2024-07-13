@@ -266,6 +266,74 @@ body {
   animation: oddball-scale-up 0.3s ease-in-out forwards;
 }
 
+
+
+
+
+.crazy-info {
+  background-color: #333;
+  color: #f0f2f5;
+  padding: 50px; /* Increased padding for larger size */
+  border-radius: 30px; /* Rounded shape */
+  position: relative;
+  overflow: hidden;
+  max-width: 800px; /* Increased max-width */
+  margin: 0 auto; /* Center align */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Increased shadow for depth */
+}
+
+.crazy-info::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Funky gradient */
+  z-index: -1;
+  border-radius: 40px; /* Increased border radius */
+  transition: transform 0.3s ease;
+  transform: scale(0.9);
+}
+
+.crazy-info:hover::before {
+  transform: scale(1);
+}
+
+.crazy-info h2 {
+  font-family: 'Bangers', cursive; /* Funky font */
+  font-size: 3em; /* Increased font size */
+  margin-bottom: 20px; /* Increased margin */
+  transition: color 0.3s ease;
+}
+
+.crazy-info:hover h2 {
+  color: #ffe45f; /* Change color on hover */
+}
+
+.crazy-info p {
+  font-family: 'Arial', sans-serif; /* Default font */
+  font-size: 1.4em; /* Increased font size */
+  line-height: 1.8;
+}
+
+/* JavaScript to add animation */
+.crazy-info.animated {
+  animation: slide-in 0.5s ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
   </style>
 
  
@@ -496,39 +564,36 @@ body {
       </section>
 
 
-      
-      <section class="about" id="about">
-        <div class="container">
-          <div class="about__content">
-            <div class="about_text">
-              <div>
-                <h2 style="color: #f0f2f5;">about Young Peezy </h2>
-                <p style="color: #f0f2f5;">
-                  Young Peezy is the online alias of Pepe, Its simple ..
 
-                  In the world of Pepe, there is internet and on that internet
-                  there is social media and on that social media there is frens 
-                  and within those frens there is Young Peezy and will the real 
-                  Young Peezy pls stand up 
 
-                  Just like you reading this right now, logged into Telegram or X 
-                  maybe TikTok or YouTube all using an alias 
+<div class="crazy-info">
+  <h2>About Young Peezy</h2>
+  <p>
+    Young Peezy is the online alias of Pepe. It's simple...
+    In the world of Pepe, there is internet and on that internet
+    there is social media and on that social media there are friends
+    and within those friends there is Young Peezy. Will the real
+    Young Peezy please stand up?
+    Just like you reading this right now, logged into Telegram or X
+    maybe TikTok or YouTube, all using an alias.
+    So don't you get it yet...
+    Young Peezy is all of us.
+  </p>
+</div>
 
-                  So don't you get it yet ..
+<script>
+// JavaScript to add animation on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const infoSection = document.querySelector('.crazy-info');
+  infoSection.classList.add('animated');
+});
+</script>
 
-                  Young Peezy is all of us
-                </p>
-              </div>
-              <!-- <img src="assets/svg/elipse.svg" /> -->
-              <img src="assets/png/bg4.png" />
 
-              
-            </div>
-            <!-- <img src="assets/png/pic4.jpg" /> -->
-          </div>
-        </div>
-      
-     </section>
+
+
+
+
      
       
       <section class="tokenomics" id="tokenomics">
@@ -648,29 +713,7 @@ body {
     </script>
     
 
-      <!-- <section class="buy" id="buy">
-        <div class="container buy__content">
-          <img
-            style="width: 100dvw; position: absolute; top: -100px; z-index: -1"
-            src="assets/png/howto.png"
-          />
-          <img class="arrows" src="assets/png/arrows.png" />
-          <div>
-            <div>
-              <img src="assets/svg/icedbg.svg" alt="" />
-              <img src="assets/svg/icedbg2.svg" alt="" />
-            </div>
-            <div>
-              <img
-                class="invalid"
-                src="assets/svg/icedbg35e1f.svg?v=2"
-                alt=""
-              />
-              <img src="assets/svg/icedbg4.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section> -->
+      
       <section class="community">
         <div class="container cm">
           <div class="community_div">
