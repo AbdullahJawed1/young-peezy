@@ -492,6 +492,7 @@ body {
 @media (max-width: 1000px) {
   .navbar-toggle {
     display: block;
+    width: 70px;
   }
 
   .nav-links {
@@ -502,7 +503,7 @@ body {
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 250%;
+    width: 180%;
   }
 
   .nav-links.active {
@@ -597,7 +598,7 @@ body {
 .tokens span,
 .tokens button {
   display: inline-block;
-  padding: 10px 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   font-size: 1.2em;
   color: #fff;
@@ -632,6 +633,12 @@ body {
   .tokens button {
     margin-bottom: 10px; /* Add space between elements */
     width: 100%; /* Ensure full width */
+  }
+}
+
+@media (max-width: 768px) {
+  .address {
+    display: none;
   }
 }
 
@@ -921,11 +928,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <!-- <h2>Young Peezy Tokenomics</h2> -->
             <p><span style="color: #ffde68"></span></p>
-            <span
+            <div class="address">
+            <span 
               ><span id="numbers"
                 >0x0000000000000000</span
               ><button onclick="copy()">Copy</button>
             </span>
+            </div>
             <ul class="tokens__cards">
               <li class="tokens__card">
                 <img src="assets/png/dred.png" />
@@ -1203,6 +1212,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       @media (max-width: 768px) {
   .community-circle2 {
+    display: none;
+  }
+
+  .community-circle {
     display: none;
   }
 }
