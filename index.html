@@ -181,6 +181,8 @@ body {
   }
 
   .intro-text p {
+    font-family: 'Bangers', cursive; /* Funky font */
+    font: bold;
     text-align: center;
     font-size: 1.2em;
     line-height: 1.6;
@@ -992,7 +994,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <section class="how-to-body" id="buy">
         <div class="how-to-container">
           <div class="how-to-content">
-            <h2 style="text-align: center;   font: bold; font-family: 'Bangers', cursive; color: #2efb20;">HOW TO BUY</h2>
+            <h2 style="     font-size: 2em;text-align: center;   font: bold; font-family: 'Bangers', cursive; color: #2efb20;">HOW TO BUY</h2>
             <div class="how-to-step" data-step="1">
               <h3 class="how-to-step-title">1. Install MetaMask and Add ETH</h3>
               <p class="how-to-step-content">Install Metamask Extension and Create an Account at <a href="https://metamask.io" target="_blank" style="color: #ffd700;">metamask.io</a>. Make sure your account has some ETH; you can buy ETH directly on MetaMask.</p>
@@ -1261,13 +1263,13 @@ document.addEventListener('DOMContentLoaded', function() {
             class="laboratory__title"
             src="assets/png/pic2.jpg"
             alt=""
-            style="width: 30%; margin-right: 5%;"
+            style="width: 40%; margin-right: 5%;"
           />
           <img
             class="laboratory__illustration"
             src="assets/png/pic3.jpg"
             alt=""
-            style="width: 30%; margin-right: 5%;"
+            style="width: 40%; margin-right: 5%;"
           />
         </div>
         <script>
@@ -1290,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       
           const container = document.querySelector('.laboratory');
-          for (let i = 0; i < 60; i++) {
+          for (let i = 0; i < 50; i++) {
             const img = createMovingImage();
             container.appendChild(img);
           }
