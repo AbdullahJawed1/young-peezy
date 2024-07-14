@@ -576,12 +576,13 @@ body {
 .tokens span,
 .tokens button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 5px;
   font-size: 1.2em;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  overflow: hidden;
+  overflow: hidden !important;
+  overflow-x: hidden !important;  /* Prevent horizontal overflow on smaller screens */
   text-overflow: ellipsis; /* Ensure text overflow is handled */
   white-space: nowrap; /* Prevent wrapping */
 }
