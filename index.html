@@ -513,6 +513,136 @@ body {
 
 
 
+/* General styles for the section */
+.tokenomics {
+  padding: 50px 0;
+  background: url('assets/png/bg4.png') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 10px;
+  overflow-x: hidden !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tokens h2 {
+  font-family: 'Comic Sans MS', cursive;
+  font: bold;
+
+  font-size: 3em;
+  font-weight: bold;
+  color: #e7d215; /* Adjusted text color */
+  margin-bottom: 20px;
+}
+
+.tokens__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tokens__card {
+  background-color: #e7d215;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tokens__card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tokens__card div {
+  text-align: left;
+}
+
+.tokens__card p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Shake animation */
+@keyframes shake-left {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes shake-right {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.tokens__card:nth-child(odd) {
+  animation: shake-left 1s infinite;
+}
+
+.tokens__card:nth-child(even) {
+  animation: shake-right 1s infinite;
+}
+
+/* Styling for text boxes */
+.tokens span,
+.tokens button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+  overflow: hidden !important;
+  overflow-x: hidden !important;  /* Prevent horizontal overflow on smaller screens */
+  text-overflow: ellipsis; /* Ensure text overflow is handled */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.tokens button {
+  cursor: pointer;
+}
+
+.tokens button:hover {
+  background-color: #b50101;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tokens__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tokens__card {
+    width: 80%; /* Adjust width to fit screen */
+    max-width: 300px; /* Limit maximum width */
+  }
+
+  .tokens span,
+  .tokens button {
+    margin-bottom: 10px; /* Add space between elements */
+    width: 100%; /* Ensure full width */
+  }
+}
+
+@media (max-width: 768px) {
+  .address {
+    display: none;
+  }
+}
+
 
 
 
@@ -790,13 +920,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<!--      
+     
       
       <section class="tokenomics" id="tokenomics">
         <div class="container4">
           <div class="tokens">
           <h2 class="yoyo2" style="font-family: 'Comic Sans MS', cursive; font-size: 3em; font: bold; color: #e7d215;">Young Peezy Tokenomics</h2>
 
+            <!-- <h2>Young Peezy Tokenomics</h2> -->
             <p><span style="color: #ffde68"></span></p>
             <div class="address">
             <span 
@@ -860,7 +991,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       
       
- -->
+
 
 
 
