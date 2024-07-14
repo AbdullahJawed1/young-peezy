@@ -141,15 +141,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
+    
     background: linear-gradient(90deg, #000000, #15ff00); /* Funky gradient */
 
   }
 
   #unique-header {
-    background: linear-gradient(135deg, #000000, #15ff00); /* Funky gradient */
+    background: (0, 0,0,0); /* Funky gradient */
     position: relative;
     overflow: hidden;
     height: 100vh;
@@ -496,13 +494,11 @@ body {
 
 
 
-
-
 /* General styles for the section */
 .tokenomics {
   padding: 50px 0;
-  /* background-color: #45a049; */
   background: url('assets/png/bg4.png') no-repeat center center;
+  background-size: cover;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -516,8 +512,8 @@ body {
   font-family: 'Comic Sans MS', cursive;
   font-size: 3em;
   font-weight: bold;
-  color: #333;
-  /* margin-bottom: 20px; */
+  color: #e7d215; /* Adjusted text color */
+  margin-bottom: 20px;
 }
 
 .tokens__cards {
@@ -578,14 +574,17 @@ body {
 }
 
 /* Styling for text boxes */
-.tokens span, .tokens button {
+.tokens span,
+.tokens button {
   display: inline-block;
-  /* margin: 20px; */
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1.2em;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0); /* Adjust transparency as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ensure text overflow is handled */
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 .tokens button {
@@ -601,6 +600,17 @@ body {
   .tokens__cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .tokens__card {
+    width: 80%; /* Adjust width to fit screen */
+    max-width: 300px; /* Limit maximum width */
+  }
+
+  .tokens span,
+  .tokens button {
+    margin-bottom: 10px; /* Add space between elements */
+    width: 100%; /* Ensure full width */
   }
 }
 
@@ -721,7 +731,7 @@ body {
       
 
 
-<!--       <div class="navbar-container">
+      <div class="navbar-container">
         <button class="navbar-toggle" id="navbar-toggle">☰</button>
         <ul class="nav-links" id="nav-links">
           <img src="assets/png/head.png" alt="" width="50">
@@ -739,7 +749,7 @@ document.getElementById('navbar-toggle').addEventListener('click', function() {
   document.getElementById('nav-links').classList.toggle('active');
 });
 
-    </script> -->
+    </script>
 
 <!--       
       <section class="banner" id="banner">
@@ -887,11 +897,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <!-- <h2>Young Peezy Tokenomics</h2> -->
             <p><span style="color: #ffde68"></span></p>
-<!--             <span
+            <span
               ><span id="numbers"
                 >0x0000000000000000000000000000000000</span
-              ><button onclick="copy()">Copy</button></span
-            > -->
+              ><button onclick="copy()">Copy</button>
+            </span>
             <ul class="tokens__cards">
               <li class="tokens__card">
                 <img src="assets/png/dred.png" />
