@@ -4,15 +4,7 @@
 
     <style>
 
-    .body{
-      background-color: #45a049;
-      /* margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    height: 100%; */
-
-      }
+    
 
 
 
@@ -152,11 +144,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #45a049;
+    background: linear-gradient(135deg, #000000, #15ff00); /* Funky gradient */
   }
 
   #unique-header {
-    background-color: #45a049;
+    background: linear-gradient(135deg, #000000, #15ff00); /* Funky gradient */
     position: relative;
     overflow: hidden;
     height: 100vh;
@@ -403,7 +395,7 @@ body {
 
 .navbar-toggle {
   display: none;
-  background: #11da03;
+  background: linear-gradient(135deg, #1baa48, #00ffbf); /* Funky gradient */
   border: none;
   color: #333;
   font-size: 24px;
@@ -416,7 +408,7 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  background: #11da03;
+  background: linear-gradient(135deg, #1baa48, #00ffbf); /* Funky gradient */
   padding: 20px 15px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -1220,7 +1212,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <!-- background: url('assets/png/bg3.png'); -->
 
-      <section class="laboratory" style="   background-color: #45a049;  position: relative; padding: 20px; overflow: hidden;">
+      <section class="laboratory" style="background: linear-gradient(135deg, #000000, #15ff00); /* Funky gradient */;  position: relative; padding: 20px; overflow: hidden;">
         <div class="laboratory__container container" style="display: flex; justify-content: center; align-items: center; position: relative; z-index: 10;">
           <img
             class="laboratory__title"
@@ -1255,7 +1247,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       
           const container = document.querySelector('.laboratory');
-          for (let i = 0; i < 80; i++) {
+          for (let i = 0; i < 60; i++) {
             const img = createMovingImage();
             container.appendChild(img);
           }
