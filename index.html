@@ -172,18 +172,35 @@ body {
 
   .yoyo {
     position: relative;
-            top: 25px;
+            top: 110px;
             width: 90%; /* Make the image smaller */
-            max-width: 500px; /* Set a maximum width */
+            max-width: 350px; /* Set a maximum width */
             height: auto; /* Maintain aspect ratio */
             margin: -10% auto 0; /* Center the image and adjust margin as needed */
         }
         
         @media (min-width: 768px) {
             .yoyo {
-                margin: -190px ; /* Adjust for larger screens */
+                margin: -190px auto 0; /* Adjust for larger screens */
+                margin-bottom: 0; /* Remove bottom margin for larger screens */
             }
         }
+
+
+      
+        @media (max-width: 767px) {
+            .yoyo {
+                margin-bottom: 50px; /* Increase space below the image for mobile screens */
+            }
+        }
+
+
+        
+
+
+
+
+        
 
   .intro-text {
     text-align: start;
@@ -192,6 +209,7 @@ body {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+    margin-top: 40px;
     margin: 20px;
     z-index: 10;
   }
@@ -733,7 +751,7 @@ body {
         
         <div class="image-behind-heading"></div>
         <!-- <h1 class="yoyo" style="color: rgb(255, 239, 10); font-style: oblique; font: bold;">YOUNG PEEZY</h1> -->
-        <img class="yoyo" src="assets/png/yp.png " style="top: 25px; position: relative;margin: -170px; " />
+        <img class="yoyo" src="assets/png/yp.png "  />
 
         <div class="intro-text">
           <p>HI, I’M $YOUNG PEEZY!</p>
