@@ -149,7 +149,9 @@ body {
 
 
   #unique-header {
-    background: (0, 0,0,0); /* Funky gradient */
+    /* background: (0, 0,0,0); */
+    background: url('assets/png/bg3.png') no-repeat center center;
+
     position: relative;
     overflow: hidden;
     height: 100vh;
@@ -221,7 +223,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 10px; /* Changed from 7px to 20px */
+    bottom: 40px; /* Changed from 7px to 20px */
     z-index: 5;
     padding: 0 20px;
 
@@ -775,7 +777,7 @@ body {
         document.addEventListener('DOMContentLoaded', function() {
           const header = document.getElementById('unique-header');
     
-          for (let i = 0; i < 100; i++) {
+          for (let i = 0; i < 120; i++) {
             const img = document.createElement('div');
             img.className = 'moving-image';
     
